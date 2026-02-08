@@ -22,10 +22,10 @@
 				This project started with curiosity. We wanted to understand cuneiform for ourselves, and quickly discovered how difficult it is to find accessible starting points. The more we learnt, the more we realised others might be curious too.
 			</p>
 			<p class="font-body text-sm sm:text-base text-clay-700 mb-3 sm:mb-4">
-				Only a few hundred people in the world can read cuneiform. Yet over <strong>500,000 clay tablets</strong> have been excavated, and many remain untranslated, their stories locked away for millennia.
+				Only a few hundred people in the world can read cuneiform. Yet over <strong>half a million clay tablets</strong> have been excavated from the ancient cities of Mesopotamia.
 			</p>
 			<p class="font-body text-sm sm:text-base text-clay-700">
-				Discover Cuneiform is our attempt to share what we found: a starting point for the curious, with pathways to dive deeper. We hope it helps others discover this ancient writing system and perhaps, in time, contribute to the collective effort of preserving humanity's oldest written heritage.
+				We may not be archaeologists, Assyriologists, or museum curators. We came to this journey drawn in by the script itself and the extraordinary discoveries that surround it. Discover Cuneiform is our attempt to share that journey, a starting point for the curious, with genuine pathways to dive deeper. We believe this world should not belong only to specialists. The writing system that gave humanity its earliest recorded literature, its earliest codified laws, its earliest mathematics deserves a wider circle of attention.
 			</p>
 		</div>
 	</section>
@@ -37,10 +37,10 @@
 		</h2>
 		<div class="space-y-3 sm:space-y-4 font-body text-sm sm:text-base text-clay-700">
 			<p>
-				Discover Cuneiform is a free, non-commercial educational tool that makes cuneiform accessible to curious learners. Whether you want to explore famous ancient texts, learn to write like a Mesopotamian scribe, or create your own cuneiform inscriptions, this app provides a starting point.
+				Discover Cuneiform is a free, non-commercial educational tool that makes cuneiform accessible to curious learners. Whether you want to explore famous ancient texts, learn to write as Mesopotamian scribes did, or compose your own inscriptions in cuneiform script, this is a place to begin.
 			</p>
 			<p>
-				This is not a scholarly research platform or translation engine. It's designed to spark interest and provide an entry point into ancient Mesopotamian writing.
+				This is not a scholarly research platform or a translation engine. It is designed to spark genuine engagement with an ancient writing system, and to connect you with the academic resources that go far deeper.
 			</p>
 		</div>
 	</section>
@@ -53,19 +53,19 @@
 		<div class="grid grid-cols-2 gap-3 sm:gap-4">
 			<div class="bg-clay-100 rounded-xl border border-clay-200 p-3 sm:p-4">
 				<h3 class="font-display text-sm sm:text-base font-medium text-clay-800 mb-1">Explore</h3>
-				<p class="text-xs sm:text-sm text-clay-600">Browse famous tablets like the Epic of Gilgamesh and Code of Hammurabi with translations.</p>
+				<p class="text-xs sm:text-sm text-clay-600">Browse celebrated tablets, from the Epic of Gilgamesh to the Code of Hammurabi, with transliterations, translations, and historical context.</p>
 			</div>
 			<div class="bg-clay-100 rounded-xl border border-clay-200 p-3 sm:p-4">
 				<h3 class="font-display text-sm sm:text-base font-medium text-clay-800 mb-1">Learn</h3>
-				<p class="text-xs sm:text-sm text-clay-600">Practice writing cuneiform signs with interactive lessons on wedge strokes.</p>
+				<p class="text-xs sm:text-sm text-clay-600">Study cuneiform through structured lessons. Begin as scribes did in the edubba, the ancient tablet house.</p>
 			</div>
 			<div class="bg-clay-100 rounded-xl border border-clay-200 p-3 sm:p-4">
 				<h3 class="font-display text-sm sm:text-base font-medium text-clay-800 mb-1">Create</h3>
-				<p class="text-xs sm:text-sm text-clay-600">Write your own text and see it rendered in cuneiform script.</p>
+				<p class="text-xs sm:text-sm text-clay-600">Write your own text and see it rendered in cuneiform on a virtual clay tablet.</p>
 			</div>
 			<div class="bg-clay-100 rounded-xl border border-clay-200 p-3 sm:p-4">
 				<h3 class="font-display text-sm sm:text-base font-medium text-clay-800 mb-1">Discover</h3>
-				<p class="text-xs sm:text-sm text-clay-600">Find books, videos, and research projects to learn more.</p>
+				<p class="text-xs sm:text-sm text-clay-600">Dive deeper with a curated collection of digital libraries, books, active research projects and more.</p>
 			</div>
 		</div>
 	</section>
@@ -92,16 +92,6 @@
 			</ul>
 			<p class="mt-3 sm:mt-4 pt-3 border-t border-clay-200 text-xs sm:text-sm text-clay-500">
 				See our <a href="/resources" class="text-lapis-600 hover:underline">Resources page</a> for full attribution details.
-			</p>
-		</div>
-	</section>
-
-	<!-- Disclaimer -->
-	<section class="mb-8 sm:mb-10">
-		<div class="bg-fired-50 rounded-xl border border-fired-200 p-3 sm:p-4">
-			<h3 class="font-display text-sm sm:text-base font-medium text-fired-800 mb-1 sm:mb-2">Important Note</h3>
-			<p class="text-xs sm:text-sm text-fired-700">
-				The "Create" feature uses phonetic approximation to map modern sounds to cuneiform signs. This is not authentic Sumerian or Akkadian translation. Those languages had their own grammar and vocabulary. For scholarly work, please consult academic resources directly.
 			</p>
 		</div>
 	</section>
