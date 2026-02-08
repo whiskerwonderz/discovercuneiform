@@ -91,6 +91,12 @@
 
 	const books = [
 		{
+			title: 'Learn to Read Ancient Sumerian',
+			author: 'Joshua Bowen & Megan Lewis',
+			description: 'An introduction for complete beginners with no prior training in ancient languages',
+			url: 'https://www.theportobellobookshop.com/9781734358605'
+		},
+		{
 			title: 'Workbook of Cuneiform Signs',
 			author: 'Daniel C. Snell',
 			description: 'Free on Archive.org. Teaches the 110 most common cuneiform signs with exercises',
