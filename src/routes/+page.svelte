@@ -1,13 +1,19 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { getRandomPhrase, PHRASES } from '$lib/data/phrases';
 
 	// Client-side state for rotating phrases
 	let currentPhrase = $state(PHRASES[0]);
+	let currentId = $state(PHRASES[0].id);
 	let visible = $state(true);
 
 	$effect(() => {
+		if (!browser) return;
+
 		// Pick a random phrase on mount
-		currentPhrase = getRandomPhrase();
+		const initial = getRandomPhrase();
+		currentPhrase = initial;
+		currentId = initial.id;
 
 		// Change phrase every 15 seconds
 		const interval = setInterval(() => {
@@ -15,10 +21,11 @@
 			setTimeout(() => {
 				// Get a different phrase than current
 				let newPhrase = getRandomPhrase();
-				while (newPhrase.id === currentPhrase.id && PHRASES.length > 1) {
+				while (newPhrase.id === currentId && PHRASES.length > 1) {
 					newPhrase = getRandomPhrase();
 				}
 				currentPhrase = newPhrase;
+				currentId = newPhrase.id;
 				visible = true; // Fade in
 			}, 300); // Match CSS transition duration
 		}, 15000);
