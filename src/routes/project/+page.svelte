@@ -22,7 +22,7 @@
 				This project started with curiosity. We wanted to understand cuneiform for ourselves, and quickly discovered how difficult it is to find accessible starting points. The more we learnt, the more we realised others might be curious too.
 			</p>
 			<p class="font-body text-sm sm:text-base text-clay-700 mb-3 sm:mb-4">
-				Only a few hundred people in the world can read cuneiform. Yet over <strong>half a million clay tablets</strong> have been excavated from the ancient cities of Mesopotamia.
+				Only a few hundred people in the world can read cuneiform. Yet over <strong>half a million clay tablets</strong> have been excavated from the ancient cities of Mesopotamia, and many remain untranslated.
 			</p>
 			<p class="font-body text-sm sm:text-base text-clay-700">
 				We may not be archaeologists, Assyriologists, or museum curators. We came to this journey drawn in by the script itself and the extraordinary discoveries that surround it. Discover Cuneiform is our attempt to share that journey, a starting point for the curious, with genuine pathways to dive deeper. We believe this world should not belong only to specialists. The writing system that gave humanity its earliest recorded literature, its earliest codified laws, its earliest mathematics deserves a wider circle of attention.
