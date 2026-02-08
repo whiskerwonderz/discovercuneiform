@@ -28,6 +28,7 @@
 				<a href="/" class="flex items-center gap-2 sm:gap-3 group" onclick={closeMobileMenu}>
 					<span class="cuneiform text-xl sm:text-2xl text-clay-800 group-hover:text-lapis-500 transition-colors">𒀭</span>
 					<span class="font-display text-lg sm:text-xl font-medium text-clay-800">Discover Cuneiform</span>
+					<span class="px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-clay-200 text-clay-600 rounded">Beta</span>
 				</a>
 
 				<!-- Mobile Menu Button -->
