@@ -46,7 +46,7 @@
 <div class="max-w-4xl mx-auto px-4 py-8 sm:py-12">
 	<header class="mb-8 sm:mb-12">
 		<h1 class="font-display text-3xl sm:text-4xl font-medium text-clay-900 mb-3 sm:mb-4">
-			Resources & Attribution
+			Attribution
 		</h1>
 		<p class="font-body text-base sm:text-lg text-clay-600">
 			Discover Cuneiform is built on the work of scholars and institutions who have made cuneiform accessible to the digital age. Here's what we use and how.
@@ -92,36 +92,6 @@
 			</article>
 		{/each}
 	</div>
-
-	<!-- How We Use These Resources -->
-	<section class="mt-8 sm:mt-12 bg-lapis-50 rounded-xl border border-lapis-200 p-4 sm:p-6">
-		<h2 class="font-display text-lg sm:text-xl font-medium text-clay-900 mb-3 sm:mb-4">
-			How Discover Cuneiform Uses These Resources
-		</h2>
-		<div class="space-y-3 sm:space-y-4 font-body text-sm sm:text-base text-clay-700">
-			<div class="flex flex-col sm:flex-row gap-1 sm:gap-3">
-				<span class="text-lapis-500 font-bold flex-shrink-0">Explore</span>
-				<p>Famous tablets with cuneiform text, transliterations, and translations sourced from CDLI. Links to original museum collections.</p>
-			</div>
-			<div class="flex flex-col sm:flex-row gap-1 sm:gap-3">
-				<span class="text-lapis-500 font-bold flex-shrink-0">Learn</span>
-				<p>Sign shapes, wedge compositions, and readings from ORACC Sign List. Lesson content created for educational purposes.</p>
-			</div>
-			<div class="flex flex-col sm:flex-row gap-1 sm:gap-3">
-				<span class="text-lapis-500 font-bold flex-shrink-0">Create</span>
-				<p>Syllabic mappings derived from ORACC phonetic values. This is phonetic approximation, not scholarly translation.</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Disclaimer -->
-	<section class="mt-6 sm:mt-8 p-3 sm:p-4 bg-fired-50 rounded-xl border border-fired-200">
-		<p class="text-xs sm:text-sm text-fired-700">
-			<strong>Important:</strong> Discover Cuneiform is a free educational tool, not a scholarly research platform.
-			For academic work, please consult the original sources directly. Our syllable-to-cuneiform mapping
-			in Create mode is a phonetic approximation and should not be confused with authentic Sumerian or Akkadian translation.
-		</p>
-	</section>
 
 	<footer class="mt-8 sm:mt-12 text-center">
 		<a href="/" class="text-sm sm:text-base text-lapis-500 hover:text-lapis-600 hover:underline">

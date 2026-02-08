@@ -129,7 +129,7 @@
 						About
 					</a>
 					<a href="/resources" class="text-lapis-500 hover:text-lapis-600 hover:underline transition-colors text-xs sm:text-sm">
-						Resources & Attribution
+						Attribution
 					</a>
 				</div>
 			</div>
