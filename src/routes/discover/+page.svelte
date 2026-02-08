@@ -91,6 +91,12 @@
 
 	const books = [
 		{
+			title: 'Workbook of Cuneiform Signs',
+			author: 'Daniel C. Snell',
+			description: 'Free on Archive.org. Teaches the 110 most common cuneiform signs with exercises',
+			url: 'https://archive.org/details/WorkbookOfCuneiformSigns1979'
+		},
+		{
 			title: 'Cuneiform',
 			author: 'Irving Finkel & Jonathan Taylor',
 			description: 'Introduction to the writing system from British Museum experts',
