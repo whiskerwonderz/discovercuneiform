@@ -1,7 +1,31 @@
 <script lang="ts">
-	import { getRandomPhrase } from '$lib/data/phrases';
+	import { getRandomPhrase, PHRASES } from '$lib/data/phrases';
 
-	const examplePhrase = getRandomPhrase();
+	// Client-side state for rotating phrases
+	let currentPhrase = $state(PHRASES[0]);
+	let visible = $state(true);
+
+	$effect(() => {
+		// Pick a random phrase on mount
+		currentPhrase = getRandomPhrase();
+
+		// Change phrase every 15 seconds
+		const interval = setInterval(() => {
+			visible = false; // Fade out
+			setTimeout(() => {
+				// Get a different phrase than current
+				let newPhrase = getRandomPhrase();
+				while (newPhrase.id === currentPhrase.id && PHRASES.length > 1) {
+					newPhrase = getRandomPhrase();
+				}
+				currentPhrase = newPhrase;
+				visible = true; // Fade in
+			}, 300); // Match CSS transition duration
+		}, 15000);
+
+		// Cleanup on unmount
+		return () => clearInterval(interval);
+	});
 </script>
 
 <div class="max-w-4xl mx-auto px-4 py-8 sm:py-12">
@@ -77,25 +101,31 @@
 			<span class="text-xs sm:text-sm font-body text-clay-500 uppercase tracking-wider">From the Archives</span>
 		</div>
 
-		<div class="text-center mb-3 sm:mb-4">
-			<div class="cuneiform-large text-clay-800 mb-2 text-xl sm:text-2xl md:text-3xl">
-				{examplePhrase.cuneiform}
+		<div
+			class="transition-opacity duration-300 ease-in-out"
+			class:opacity-0={!visible}
+			class:opacity-100={visible}
+		>
+			<div class="text-center mb-3 sm:mb-4">
+				<div class="cuneiform-large text-clay-800 mb-2 text-xl sm:text-2xl md:text-3xl">
+					{currentPhrase.cuneiform}
+				</div>
+				<div class="font-body italic text-sm sm:text-base text-clay-600 mb-1">
+					{currentPhrase.transliteration}
+				</div>
+				<div class="font-display text-lg sm:text-xl text-clay-800">
+					"{currentPhrase.translation}"
+				</div>
 			</div>
-			<div class="font-body italic text-sm sm:text-base text-clay-600 mb-1">
-				{examplePhrase.transliteration}
-			</div>
-			<div class="font-display text-lg sm:text-xl text-clay-800">
-				"{examplePhrase.translation}"
-			</div>
+
+			<p class="text-center font-body text-xs sm:text-sm text-clay-500 max-w-xl mx-auto">
+				{currentPhrase.context}
+			</p>
+
+			<p class="text-center font-body text-xs text-clay-400 mt-3 sm:mt-4">
+				Source: {currentPhrase.source}
+			</p>
 		</div>
-
-		<p class="text-center font-body text-xs sm:text-sm text-clay-500 max-w-xl mx-auto">
-			{examplePhrase.context}
-		</p>
-
-		<p class="text-center font-body text-xs text-clay-400 mt-3 sm:mt-4">
-			Source: {examplePhrase.source}
-		</p>
 	</section>
 
 	<!-- About Section -->
