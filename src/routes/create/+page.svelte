@@ -271,8 +271,7 @@ words work better than random letters."
 			<!-- Disclaimer -->
 			<div class="bg-fired-50 rounded-xl border border-fired-200 p-3 sm:p-4">
 				<p class="text-xs text-fired-700">
-					<strong>Note:</strong> This is a phonetic approximation mapping modern sounds to ancient cuneiform signs.
-					It is not an authentic Sumerian or Akkadian translation. Those languages had their own grammar and vocabulary.
+					<strong>Note:</strong> The Create feature uses phonetic approximation to map modern sounds to cuneiform sign values. It produces real, attested signs arranged to echo your words, but it is not authentic Sumerian or Akkadian translation. Those were living languages with their own grammar, vocabulary, and literature. For those who wish to study cuneiform properly, visit our <a href="/discover" class="text-fired-800 underline hover:text-fired-900">Discover</a> page for resources to dive deeper.
 				</p>
 			</div>
 		</div>
