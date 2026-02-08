@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@theme {
+	/* Earth palette */
+	--color-clay-50: #faf6f0;
+	--color-clay-100: #f5ede0;
+	--color-clay-200: #e8dbc4;
+	--color-clay-300: #d4c4a0;
+	--color-clay-400: #c4a882;
+	--color-clay-500: #a8895e;
+	--color-clay-600: #8b6914;
+	--color-clay-700: #6b5210;
+	--color-clay-800: #3d2e0a;
+	--color-clay-900: #1a1510;
+
+	/* Accent: warm terracotta */
+	--color-lapis-50: #fdf6f4;
+	--color-lapis-100: #f9e8e3;
+	--color-lapis-200: #e8c4b8;
+	--color-lapis-400: #c4715b;
+	--color-lapis-500: #a85640;
+	--color-lapis-600: #8b4533;
+	--color-lapis-700: #6b352a;
+
+	/* Accent: fired clay / terracotta */
+	--color-fired-400: #c4715b;
+	--color-fired-500: #a85640;
+
+	/* Typography */
+	--font-display: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", serif;
+	--font-body: "Source Serif 4", "Charter", "Georgia", serif;
+	--font-mono: "JetBrains Mono", "Fira Code", monospace;
+	--font-cuneiform: "Noto Sans Cuneiform", "Segoe UI Historic", sans-serif;
+
+	/* Spacing rhythm */
+	--spacing-section: 4rem;
+	--spacing-block: 2rem;
+	--spacing-element: 1rem;
+
+	/* Shadows (warm, not cool) */
+	--shadow-clay: 0 2px 8px rgba(26, 21, 16, 0.12), 0 1px 3px rgba(26, 21, 16, 0.08);
+	--shadow-tablet: 0 4px 24px rgba(26, 21, 16, 0.16), 0 2px 8px rgba(26, 21, 16, 0.1);
+	--shadow-emboss: inset 0 1px 2px rgba(26, 21, 16, 0.15);
+
+	/* Transitions */
+	--ease-clay: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--duration-fast: 150ms;
+	--duration-normal: 300ms;
+	--duration-slow: 600ms;
+
+	/* Grain overlay */
+	--grain-opacity: 0.04;
+}
+
+/* Base styles */
+html {
+	font-family: var(--font-body);
+	background-color: var(--color-clay-50);
+	color: var(--color-clay-900);
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.6;
+}
+
+/* Cuneiform text styling */
+.cuneiform {
+	font-family: var(--font-cuneiform);
+	font-size: 2em;
+	letter-spacing: 0.15em;
+	line-height: 1.4;
+}
+
+.cuneiform-large {
+	font-size: 3em;
+	letter-spacing: 0.2em;
+}
+
+/* Display headings */
+h1, h2, h3, h4 {
+	font-family: var(--font-display);
+	font-weight: 500;
+	color: var(--color-clay-800);
+}
+
+/* Clay surface texture overlay - apply via ::before pseudo-element */
+.clay-surface {
+	position: relative;
+}
+
+.clay-surface::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+	opacity: var(--grain-opacity);
+	pointer-events: none;
+	mix-blend-mode: overlay;
+}
+
+/* Interactive element press effect */
+.press-effect {
+	transition: transform var(--duration-fast) var(--ease-clay),
+	            box-shadow var(--duration-fast) var(--ease-clay);
+}
+
+.press-effect:active {
+	transform: scale(0.97) translateY(1px);
+	box-shadow: var(--shadow-emboss);
+}
+
+/* Warm glow hover */
+.warm-glow {
+	transition: box-shadow var(--duration-normal) var(--ease-clay);
+}
+
+.warm-glow:hover {
+	box-shadow: 0 0 0 3px rgba(200, 168, 130, 0.3),
+	            var(--shadow-clay);
+}
+
+/* Page transition */
+.page-enter {
+	animation: page-rise var(--duration-slow) var(--ease-clay);
+}
+
+@keyframes page-rise {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Cuneiform stamp animation */
+.stamp-enter {
+	animation: stamp var(--duration-normal) var(--ease-clay);
+}
+
+@keyframes stamp {
+	from {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* Shimmer loading effect */
+.shimmer {
+	background: linear-gradient(
+		90deg,
+		var(--color-clay-200) 0%,
+		var(--color-clay-100) 50%,
+		var(--color-clay-200) 100%
+	);
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
+}

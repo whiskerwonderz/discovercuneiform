@@ -1,0 +1,21 @@
+{
+	"name": "Discover Cuneiform",
+	"short_name": "Discover Cuneiform",
+	"description": "A free educational tool for exploring cuneiform, the world's oldest writing system",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#faf6f0",
+	"theme_color": "#c4a882",
+	"icons": [
+		{
+			"src": "/favicon.svg",
+			"type": "image/svg+xml",
+			"sizes": "any"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		}
+	]
+}
