@@ -28,7 +28,6 @@
 				<a href="/" class="flex items-center gap-2 sm:gap-3 group" onclick={closeMobileMenu}>
 					<span class="cuneiform text-xl sm:text-2xl text-clay-800 group-hover:text-lapis-500 transition-colors">𒀭</span>
 					<span class="font-display text-lg sm:text-xl font-medium text-clay-800">Discover Cuneiform</span>
-					<span class="px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-clay-200 text-clay-600 rounded">Beta</span>
 				</a>
 
 				<!-- Mobile Menu Button -->
@@ -121,9 +120,10 @@
 	<footer class="mt-auto border-t border-clay-200 bg-clay-100/50">
 		<div class="max-w-6xl mx-auto px-4 py-4 sm:py-6">
 			<div class="flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-4 text-sm">
-				<span class="text-clay-500">
+				<span class="text-clay-500 flex items-center gap-2">
 					<span class="cuneiform text-clay-400 mr-1 sm:mr-2 text-sm sm:text-base">𒀀𒀭𒆠</span>
 					<span class="text-xs sm:text-sm">A free educational tool for exploring cuneiform</span>
+					<span class="px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-clay-200 text-clay-600 rounded">Beta</span>
 				</span>
 				<div class="flex items-center gap-4 sm:gap-6">
 					<a href="/project" class="text-lapis-500 hover:text-lapis-600 hover:underline transition-colors text-xs sm:text-sm">
