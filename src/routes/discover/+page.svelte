@@ -95,6 +95,12 @@
 			author: 'Irving Finkel & Jonathan Taylor',
 			description: 'Introduction to the writing system from British Museum experts',
 			url: 'https://www.britishmuseumshoponline.org/cuneiform.html'
+		},
+		{
+			title: 'Mesopotamisches Zeichenlexikon (MZL)',
+			author: 'Rykle Borger',
+			description: 'The standard scholarly reference for cuneiform sign numbering, used worldwide (2nd ed. 2010)',
+			url: 'https://www.worldcat.org/title/mesopotamisches-zeichenlexikon/oclc/43905054'
 		}
 	];
 
