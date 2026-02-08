@@ -119,8 +119,8 @@
 	<!-- Footer -->
 	<footer class="mt-auto border-t border-clay-200 bg-clay-100/50">
 		<div class="max-w-6xl mx-auto px-4 py-4 sm:py-6">
-			<div class="flex flex-col items-center gap-3 sm:gap-4 text-sm">
-				<span class="text-clay-500 text-center">
+			<div class="flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-4 text-sm">
+				<span class="text-clay-500">
 					<span class="cuneiform text-clay-400 mr-1 sm:mr-2 text-sm sm:text-base">𒀀𒀭𒆠</span>
 					<span class="text-xs sm:text-sm">A free educational tool for exploring cuneiform</span>
 				</span>
