@@ -31,6 +31,16 @@
 			maintainers: 'Ludwig Maximilian University of Munich'
 		},
 		{
+			name: 'Borger, Mesopotamisches Zeichenlexikon (MZL)',
+			url: 'https://www.worldcat.org/title/mesopotamisches-zeichenlexikon/oclc/43905054',
+			logo: '𒁾',
+			usage: 'Sign reference numbers',
+			description: 'MZL numbers in our sign data come from Rykle Borger\'s authoritative cuneiform sign lexicon (2nd ed. 2010), the standard reference used by scholars worldwide.',
+			license: 'Scholarly citation',
+			licenseUrl: 'https://www.worldcat.org/title/mesopotamisches-zeichenlexikon/oclc/43905054',
+			maintainers: 'Rykle Borger (1929–2010)'
+		},
+		{
 			name: 'Unicode Cuneiform Block',
 			url: 'https://unicode.org/charts/PDF/U12000.pdf',
 			logo: '𒀀',
