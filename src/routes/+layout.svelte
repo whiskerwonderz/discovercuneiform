@@ -131,16 +131,7 @@
 					<a href="/resources" class="text-lapis-500 hover:text-lapis-600 hover:underline transition-colors text-xs sm:text-sm">
 						Resources & Attribution
 					</a>
-					<a href="mailto:whiskerwonderz001@gmail.com" class="text-lapis-500 hover:text-lapis-600 transition-colors" aria-label="Email us">
-						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-						</svg>
-					</a>
 				</div>
-				<p class="text-clay-500 text-xs sm:text-sm text-center">
-					Know of a resource we should include? We'd love to hear about it.
-					<a href="mailto:whiskerwonderz001@gmail.com" class="text-lapis-500 hover:text-lapis-600 hover:underline transition-colors">Drop us an e-mail.</a>
-				</p>
 			</div>
 		</div>
 	</footer>

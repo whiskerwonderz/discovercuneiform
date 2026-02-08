@@ -354,7 +354,7 @@
 	<!-- Footer -->
 	<footer class="text-center">
 		<p class="text-xs sm:text-sm text-clay-500">
-			Know of a resource we should include? We'd love to hear about it.
+			Know of a resource we should include? We'd love to hear about it. Drop us an <a href="mailto:whiskerwonderz001@gmail.com" class="text-lapis-500 hover:text-lapis-600 hover:underline">e-mail</a>.
 		</p>
 	</footer>
 </div>
